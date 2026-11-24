@@ -4,8 +4,6 @@ import os
 
 # Load config from .env
 load_dotenv()
-print("BASE_URL:", repr(os.getenv("BASE_URL")))
-print("MODEL:", repr(os.getenv("MODEL")))
 # Create a client
 client = OpenAI(
     base_url=os.getenv("BASE_URL"),
